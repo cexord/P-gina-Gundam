@@ -1,0 +1,187 @@
+/* style.css */
+
+/* Estilos Generales */
+body {
+    font-family: 'Helvetica';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007180;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #e74c3c;
+}
+
+/* Estilos para imágenes */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 40%;
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-style: bold;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilos para las tarjetas de universos alternativos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas grandes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.3em;
+    border-bottom: 1px dashed #95a5a6;
+    padding-bottom: 5px;
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Separador horizontal */
+hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 40px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 30px;
+    border-top: 5px solid #e74c3c;
+}
+
+footer a {
+    color: #f1c40f;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    section {
+        border-left: none;
+        border-top: 5px solid #3498db;
+    }
+
+    .card {
+        width: 100%; /* Una tarjeta por fila en pantallas pequeñas */
+    }
+}
